@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class options : MonoBehaviour
 {
-
+    public Text text;
     
     // Start is called before the first frame update
     void Start()
@@ -19,13 +19,12 @@ public class options : MonoBehaviour
     }
     public void sensativityslide(float newsensativity)
     {
-        StarterAssets.FirstPersonController.RotationSpeed = newsensativity;
+        StarterAssets.FirstPersonController.RotationSpeed = Mathf.Round(newsensativity/10);
+        text.text = newsensativity.ToString("0");
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
     }
 }

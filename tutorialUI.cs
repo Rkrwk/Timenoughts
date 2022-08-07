@@ -38,8 +38,11 @@ public class tutorialUI : MonoBehaviour
         {
             titleslide.SetActive(false);
             background.SetActive(false);
+            notactivie = true;
+            
         }
 
-
+      
     }
+
 }
